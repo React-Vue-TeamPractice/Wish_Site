@@ -1,0 +1,6 @@
+@mixin link_hover {
+    &:hover {  
+        color: $font;
+        text-decoration: none;
+    }
+  }
