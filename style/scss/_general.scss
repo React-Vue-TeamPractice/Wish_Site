@@ -68,21 +68,22 @@ nav {
         margin-bottom: 0;
     }
 }
+.ellipse {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 142px;
+    padding: 20px 0 20px 0;
+}
 .about-us {
     min-height: 913px;
     background-color: #DAF1FF;
     padding: 70px 0;
-    .ellipse {
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 70px;
-        text-align: center;
-        background-color: #fff;
-        border-radius: 50%;
-        width: 142px;
-        padding: 20px 0 20px 0;
-    }
+  
     &_item {
+        margin-top: 70px;
         background-color: #fff;
         border-radius: 30px;
         &_header {
@@ -97,5 +98,30 @@ nav {
             font-size: 20px;
             line-height: 50px;
         }
+    }
+}
+.advantages {
+    min-height: 1460px;
+    background-color: #D0EDFF;
+    padding: 70px 0;
+    &_block {
+      &_icon {
+          display: block;
+          margin: 0 auto;
+          margin-top: 70px;
+      }
+      &_descr {
+          display: block;
+          margin: 0 auto;
+          min-height: 295px;
+          width: 440px;
+          margin-top: 30px;
+          background-color: #fff;
+          text-align: justify;
+          padding: 20px 20px;
+          border-radius: 30px;
+          font-size: 20px;
+          line-height: 50px;
+      }
     }
 }
