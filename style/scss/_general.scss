@@ -68,3 +68,34 @@ nav {
         margin-bottom: 0;
     }
 }
+.about-us {
+    min-height: 913px;
+    background-color: #DAF1FF;
+    padding: 70px 0;
+    .ellipse {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 50%;
+        width: 142px;
+        padding: 20px 0 20px 0;
+    }
+    &_item {
+        background-color: #fff;
+        border-radius: 30px;
+        &_header {
+            padding-top: 32px;
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+        }
+        &_descr {
+            padding: 15px 30px 32px 30px;
+            text-align: justify;
+            font-size: 20px;
+            line-height: 50px;
+        }
+    }
+}
