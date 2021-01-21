@@ -1,4 +1,5 @@
 body {
+    max-width: 1920px;
     position: relative;
 }
 header {
@@ -81,7 +82,6 @@ nav {
     padding: 20px 0 20px 0;
 }
 .about-us {
-    min-height: 913px;
     background-color: #DAF1FF;
     padding: 70px 0;
   
@@ -102,7 +102,6 @@ nav {
     }
 }
 .advantages {
-    min-height: 1460px;
     background-color: #D0EDFF;
     padding: 70px 0;
     &_block {
@@ -226,6 +225,7 @@ nav {
     background-color: #B7E4FF;
     background-image: url('../../image/background/BG2.png');
     &_item {
+        margin-top: 70px;
         background-color: #fff;
         border-radius: 30px;
         &_header {

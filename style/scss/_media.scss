@@ -1,0 +1,103 @@
+@media (max-width:1440px) {
+  .main {
+      height: 900px;
+      &_subheader {
+          font-size: 36px;
+      }
+  }
+  .about-us, .opportunities, .advantages, .contacts {
+    padding-top: 30px;
+  }
+  
+  .contacts {
+    background-size: 700px;
+      max-height: 900px;
+      &_item {
+        margin-top: 30px;
+        max-width: 975px;
+        margin: 30px auto;
+          &_header {
+            padding-top: 25px;
+          }
+          &_descr {
+            line-height: 40px;
+          }
+          &_connection {
+              &_link {
+                padding-bottom: 30px;
+              }
+          }
+      }
+    }
+}
+@media (max-width:1200px) {
+    .main {
+        &_header {
+            font-size: 190px;
+            padding-top: 290px;
+        }
+        &_divider {
+            width: 410px;
+        }
+        &_subheader {
+            padding-top: 26px;
+            font-size: 31px;
+        }
+    }
+    .about-us {
+        padding-top: 30px;
+        &_item {
+            &_descr {
+                line-height: 45px;
+            }
+        }
+    }
+    .advantages {
+        padding-top: 30px;
+        &_block {
+          
+            &_icon {
+                display: block;
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+            &_descr {
+                min-height: 250px;
+                width: 410px;
+                line-height: 40px;
+            }
+        }
+    }
+    .opportunities {
+        padding-top: 30px;
+        &_header {
+            font-size: 24px;
+        }
+        &_block {
+            &_subheader {
+                font-size: 26px;
+            }
+            &_list {
+                min-height: 395px;
+                li {
+                    line-height: 36px;
+                }
+            }
+        }
+       
+    }
+    .contacts {
+        
+        padding-top: 30px;
+        &_item {
+            &_header {
+                line-height: 40px;
+            }
+            &_connection {
+                &_title {
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}
