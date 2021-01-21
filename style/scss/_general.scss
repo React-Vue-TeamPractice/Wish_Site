@@ -44,7 +44,12 @@ nav {
 
 .main {
     min-height: 1080px;
-    background: url('../../image/background/BG1.jpg') center center/cover no-repeat;
+    background-color: #E7F6FF;
+    background-image: url('../../image/background/BG1.png');
+    background-repeat: no-repeat;
+    background-position:bottom center;
+    background-size: 100%;
+    
     &_header {
         color: $font;
         padding-top: 358px;
