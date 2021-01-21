@@ -202,12 +202,25 @@ nav {
             display: block;
             position: absolute;
             left: -29px;
-            top: 9px;
+            top: 8px;
             width: 21px;
             height: 21px;
             background: url('../../image/icons/check-square-regular\ 1.svg') center (center / cover) no-repeat;
           }
         }
+       
       }
+      .future {
+        li {
+            &:first-child {
+                &:before {
+                  background: url('../../image/icons/spinner-solid\ 1.svg') center (center / cover) no-repeat;
+                }
+            }
+            &:before {
+              background: url('../../image/icons/spinner-solid\ 1.svg') center (center / cover) no-repeat;
+            }  
+        }
+    }
    }
 }
