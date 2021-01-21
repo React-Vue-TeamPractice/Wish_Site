@@ -43,12 +43,10 @@ nav {
 }
 
 .main {
-    min-height: 1080px;
+    @include bg;
     background-color: #E7F6FF;
     background-image: url('../../image/background/BG1.png');
-    background-repeat: no-repeat;
-    background-position:bottom center;
-    background-size: 100%;
+    
     
     &_header {
         color: $font;
@@ -93,9 +91,7 @@ nav {
         border-radius: 30px;
         &_header {
             padding-top: 32px;
-            font-size: 24px;
-            text-align: center;
-            line-height: 50px;
+          @include font-header;
         }
         &_descr {
             padding: 15px 30px 32px 30px;
@@ -223,4 +219,42 @@ nav {
         }
     }
    }
+}
+.contacts {
+    padding-top: 70px;
+    @include bg;
+    background-color: #B7E4FF;
+    background-image: url('../../image/background/BG2.png');
+    &_item {
+        background-color: #fff;
+        border-radius: 30px;
+        &_header {
+            padding-top: 50px;
+            @include font-header;
+        }
+        &_descr {
+            padding: 18px 30px 14px 30px;
+            font-size: 20px;
+            line-height: 50px;
+            text-align: justify;
+        }
+        &_connection {
+            &_title {
+                @include font-header;
+                padding: 0 12px;
+            }
+            &_link {
+                padding-bottom: 55px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                a {
+                    padding-right: 40px;
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
 }
