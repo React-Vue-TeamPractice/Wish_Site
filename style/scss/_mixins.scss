@@ -6,7 +6,7 @@
     }
   }
   @mixin bg {
-    height: 1080px;
+    min-height: 900px;
     background-repeat: no-repeat;
     background-position:bottom center;
     background-size: 100%;
