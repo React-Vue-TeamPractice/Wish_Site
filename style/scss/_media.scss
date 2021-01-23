@@ -5,16 +5,6 @@
         
     }
 }
-/*@media (max-width: 1920px) {
-    .main, .contacts {
-        max-height: 1080px;
-    }
-}*/
-@media (min-width: 1441px) {
-    .main, .contacts {
-        min-height: 1080px;
-    }
-}
 @media (max-width:1440px) {
   .main {
       &_subheader {
