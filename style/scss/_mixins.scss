@@ -16,3 +16,7 @@
       line-height: 50px;
       text-align: center;
   }
+  @mixin font-descr {
+    font-size: 15px;
+      line-height: 25px;
+  }

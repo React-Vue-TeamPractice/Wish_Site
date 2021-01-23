@@ -9,6 +9,7 @@ header {
 }
 .logo {
     .wrapper {
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -108,10 +109,10 @@ nav {
     background-color: #D0EDFF;
     padding: 70px 0;
     &_block {
+        margin-top: 70px;
       &_icon {
           display: block;
-          margin: 0 auto;
-          margin-top: 70px;
+          margin: 0 auto; 
       }
       &_descr {
           display: block;
@@ -147,33 +148,10 @@ nav {
         margin: 0 auto;
         margin-top: 23px;
     }
-   
-    /*&_list {
-        padding: 0 60px 0 70px;
-        max-width: 500px;
-        margin-top: 56px;
-        background-color: #fff;
-        border-radius: 30px;
-        font-size: 20px;
-        line-height: 40px;
-        list-style-image: url('../../image/icons/check-square-regular\ 1.svg');
-        text-align: justify;
-        li {
-            padding-top:10px;
-            &:first-child {
-                padding-top:35px;
-            }
-            &:last-child {
-                padding-bottom:10px;
-            }
-        }
-    }*/
     &_list {
-        margin: 0 auto;
-        margin-bottom: 70px;
+        margin: 56px auto 70px auto;
         min-height: 436px;
         max-width: 500px;
-        margin-top: 56px;
         list-style: none;
         padding-left: 50px;
         background-color: #fff;
@@ -221,6 +199,9 @@ nav {
         }
     }
    }
+}
+.mobile-visible {
+    display: none;
 }
 .contacts {
     padding-top: 70px;
