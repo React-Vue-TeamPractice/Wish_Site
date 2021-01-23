@@ -151,30 +151,142 @@
 }
 @media (max-width: 767px) {
     .logo {
+        border-radius: 0 0 30px 30px;
         &_contacts {
-            padding: 25px 0px;
+            padding-top: 20px;
             a {
                 font-size: 15px;
             }
         }
     }
-   
-    /*nav {
-        border-radius: 0 0 30px 30px;
-        height: 78px;
-        background-color: #88C9ED;
-        width: 100%;
-        a { 
-            @include link_hover;
-            transition: 0.5s all;
-            color: #ffffff;
+   nav {
+    background: none;
+    a {
+        font-size: 22px;
+    }
+   }
+    .menu {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color:#88C9ED;
+        transition: 0.6s all;
+        z-index: 2;
+        &_active {
+            border-radius: 30px 0 0 30px ;
+            right: 0;
         }
     }
-    .menu {
-        display: flex;
-        justify-content: space-between;
-        padding: 25px 70px;
-        margin: 0;
-        list-style-type: none;
-    }*/
+  
+    .hamburger {
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 30%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 12px;
+        z-index: 3;
+
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 3px;
+            transition: 0.5s all;
+        }
+
+        &_active {
+            span {
+                margin-bottom: -2px;
+
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+
+                &:nth-child(2) {
+                    display: none;
+                }
+
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+
+            }
+        }
+
+    }
+    .ellipse {
+        padding: 15px 0;
+        width: 130px;
+    }
+    .main {
+        &_header {
+            font-size: 160px;
+            line-height: 180px;
+        }
+        &_subheader {
+            font-size: 29px;
+            z-index: 1;
+        }
+    }
+    .about-us {
+        &_item {
+            &_header {
+                font-size: 21px;
+                line-height: 35px;
+            }
+            &_descr {
+                line-height: 35px;
+            }
+        }
+    }
+    .advantages {
+        &_block {
+            &_descr {
+                min-height: 150px;
+                font-size: 18px;
+                line-height: 35px;
+            }
+        }
+    }
+    .opportunities {
+        padding-bottom: 0;
+        &_header {
+            font-size: 22px;
+        }
+        &_block {
+            &_subheader {
+                margin-top: 20px;
+                font-size: 24px;
+            }
+            &_descr {
+                min-height: 370px;
+                margin: 40px auto;
+            }
+        }
+    }
+    .contacts {
+       &_item {
+        &_header {
+            font-size: 22px;
+            line-height: 35px;
+        }
+        &_descr {
+            font-size: 18px;
+            line-height: 35px;
+            padding: 12px 30px;
+        }
+        &_connection {
+            font-size: 20px;
+        }
+       }
+    }
 }
