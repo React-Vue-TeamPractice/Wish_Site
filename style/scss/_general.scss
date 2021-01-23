@@ -8,14 +8,17 @@ header {
     width: 100%;
 }
 .logo {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
     height: 100px;
     width: 100%;
     background-color: #7EBFE2;
-    &_img {
-        display: block;
-        margin: 0 auto;
-    }
     &_contacts {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         padding: 25px 0px;
         a {
             transition: 0.5s all;
