@@ -2,7 +2,9 @@ body {
     max-width: 1920px;
     position: relative;
 }
-
+.mobile {
+    display: none;
+}
 header {
     position: absolute;
     width: 100%;

@@ -144,6 +144,12 @@
     }
 }
 @media (max-width: 767px) {
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
     .main {
         &_divider {
             width: 350px;
