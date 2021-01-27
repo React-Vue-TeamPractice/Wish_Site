@@ -21,13 +21,11 @@ window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav')
     const numScroll = window.scrollY
     if (numScroll >= 100) {
-        console.log('Scroll равен 100')
         nav.style.position = 'fixed'
         nav.style.top = '0'
         nav.style.zIndex = '1'
     } else {
         nav.style.position = 'unset'
         nav.style.top = 'unset'
-        console.log('Scroll не равен 100')
     }
 })
